@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Discovery - BookVerse</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav id="navbar">
+      <div class="nav-container">
+        <a href="index.html" class="logo">📚 BookVerse</a>
+        <ul class="nav-links">
+          <li><a href="index.html" class="nav-link">Beranda</a></li>
+          <li>
+            <a href="discovery.html" class="nav-link active">Discovery</a>
+          </li>
+          <li><a href="about.html" class="nav-link">Tentang</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Discovery Page -->
+    <div class="discovery-page">
+      <div class="container">
+        <h1 class="page-title">Discovery</h1>
+
+        <!-- Top 5 Best Sellers -->
+        <div class="section">
+          <h2 class="section-title">🏆 Top 5 Best Sellers</h2>
+          <div class="books-grid">
+            <div class="book-card" onclick="showBookDetail('atomic-habits')">
+              <div class="bestseller-badge">#1</div>
+              <div class="book-cover">Atomic Habits</div>
+              <div class="book-title">Atomic Habits</div>
+              <div class="book-author">James Clear</div>
+              <div class="book-price">Rp 89.000</div>
+            </div>
+            <div class="book-card" onclick="showBookDetail('sapiens')">
+              <div class="bestseller-badge">#2</div>
+              <div class="book-cover">Sapiens</div>
+              <div class="book-title">Sapiens</div>
+              <div class="book-author">Yuval Noah Harari</div>
+              <div class="book-price">Rp 95.000</div>
+            </div>
+            <div class="book-card" onclick="showBookDetail('psychology-money')">
+              <div class="bestseller-badge">#3</div>
+              <div class="book-cover">The Psychology of Money</div>
+              <div class="book-title">The Psychology of Money</div>
+              <div class="book-author">Morgan Housel</div>
+              <div class="book-price">Rp 79.000</div>
+            </div>
+            <div
+              class="book-card"
+              onclick="showBookDetail('thinking-fast-slow')"
+            >
+              <div class="bestseller-badge">#4</div>
+              <div class="book-cover">Thinking Fast and Slow</div>
+              <div class="book-title">Thinking, Fast and Slow</div>
+              <div class="book-author">Daniel Kahneman</div>
+              <div class="book-price">Rp 105.000</div>
+            </div>
+            <div class="book-card" onclick="showBookDetail('7-habits')">
+              <div class="bestseller-badge">#5</div>
+              <div class="book-cover">The 7 Habits</div>
+              <div class="book-title">
+                The 7 Habits of Highly Effective People
+              </div>
+              <div class="book-author">Stephen R. Covey</div>
+              <div class="book-price">Rp 85.000</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Fiction -->
+        <div class="section">
+          <h2 class="section-title">📖 Fiction</h2>
+          <div class="books-grid">
+            <div class="book-card" onclick="showBookDetail('alchemist')">
+              <div class="book-cover">The Alchemist</div>
+              <div class="book-title">The Alchemist</div>
+              <div class="book-author">Paulo Coelho</div>
+              <div class="book-price">Rp 75.000</div>
+            </div>
+            <div class="book-card" onclick="showBookDetail('1984')">
+              <div class="book-cover">1984</div>
+              <div class="book-title">1984</div>
+              <div class="book-author">George Orwell</div>
+              <div class="book-price">Rp 68.000</div>
+            </div>
+            <div class="book-card" onclick="showBookDetail('mockingbird')">
+              <div class="book-cover">To Kill a Mockingbird</div>
+              <div class="book-title">To Kill a Mockingbird</div>
+              <div class="book-author">Harper Lee</div>
+              <div class="book-price">Rp 72.000</div>
+            </div>
+            <div class="book-card" onclick="showBookDetail('pride-prejudice')">
+              <div class="book-cover">Pride and Prejudice</div>
+              <div class="book-title">Pride and Prejudice</div>
+              <div class="book-author">Jane Austen</div>
+              <div class="book-price">Rp 65.000</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Science & Technology -->
+        <div class="section">
+          <h2 class="section-title">🔬 Science & Technology</h2>
+          <div class="books-grid">
+            <div
+              class="book-card"
+              onclick="showBookDetail('brief-history-time')"
+            >
+              <div class="book-cover">A Brief History of Time</div>
+              <div class="book-title">A Brief History of Time</div>
+              <div class="book-author">Stephen Hawking</div>
+              <div class="book-price">Rp 88.000</div>
+            </div>
+            <div class="book-card" onclick="showBookDetail('code-breaker')">
+              <div class="book-cover">The Code Breaker</div>
+              <div class="book-title">The Code Breaker</div>
+              <div class="book-author">Walter Isaacson</div>
+              <div class="book-price">Rp 125.000</div>
+            </div>
+            <div class="book-card" onclick="showBookDetail('educated')">
+              <div class="book-cover">Educated</div>
+              <div class="book-title">Educated</div>
+              <div class="book-author">Tara Westover</div>
+              <div class="book-price">Rp 92.000</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Business -->
+        <div class="section">
+          <h2 class="section-title">💼 Business</h2>
+          <div class="books-grid">
+            <div class="book-card" onclick="showBookDetail('good-great')">
+              <div class="book-cover">Good to Great</div>
+              <div class="book-title">Good to Great</div>
+              <div class="book-author">Jim Collins</div>
+              <div class="book-price">Rp 98.000</div>
+            </div>
+            <div class="book-card" onclick="showBookDetail('lean-startup')">
+              <div class="book-cover">The Lean Startup</div>
+              <div class="book-title">The Lean Startup</div>
+              <div class="book-author">Eric Ries</div>
+              <div class="book-price">Rp 89.000</div>
+            </div>
+            <div class="book-card" onclick="showBookDetail('start-why')">
+              <div class="book-cover">Start With Why</div>
+              <div class="book-title">Start With Why</div>
+              <div class="book-author">Simon Sinek</div>
+              <div class="book-price">Rp 85.000</div>
+            </div>
+            <div class="book-card" onclick="showBookDetail('zero-one')">
+              <div class="book-cover">Zero to One</div>
+              <div class="book-title">Zero to One</div>
+              <div class="book-author">Peter Thiel</div>
+              <div class="book-price">Rp 95.000</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Book Detail Modal -->
+    <div id="bookModal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <div class="modal-body">
+          <div class="modal-book-cover" id="modalBookCover"></div>
+          <div class="modal-book-info">
+            <h2 id="modalBookTitle"></h2>
+            <p class="modal-author" id="modalBookAuthor"></p>
+            <p class="modal-year" id="modalBookYear"></p>
+            <div class="modal-synopsis">
+              <h3>Sinopsis</h3>
+              <p id="modalBookSynopsis"></p>
+            </div>
+            <div class="modal-price" id="modalBookPrice"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="scripts.js"></script>
+  </body>
+</html>
